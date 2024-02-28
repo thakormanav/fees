@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +24,9 @@
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-opacity: 110%;
-color: white;
-       
+            opacity: 110%;
+            color: white;
+
         }
 
         label {
@@ -35,106 +36,103 @@ color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        input, textarea {
+        input,
+        textarea {
             width: 100%;
             padding: 8px;
             margin-bottom: 16px;
             box-sizing: border-box;
-           border-radius: 5px;
-          
+            border-radius: 5px;
+
             color: rgb(20, 17, 17);
             opacity: 70%;
         }
+
         input:hover {
-           
+
             opacity: 100%;
         }
 
-       .submit{
-        width:100px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: black;
-        font-size: 16px;
-        background-color: aliceblue;
-        border-radius: 10px;
-       }
-       
-       .submit:hover{
-       background-color: aqua;
-       color: black;
-       }
+        .submit {
+            width: 100px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            font-size: 16px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
 
-       
-       .reset{
-        width:100px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: black;
-        font-size: 16px;
-        background-color: aliceblue;
-        border-radius: 10px;
-       }
-       
-       .reset:hover{
-       background-color: aqua;
-       color: black;
-       }
+        .submit:hover {
+            background-color: aqua;
+            color: black;
+        }
 
-       
+
+        .reset {
+            width: 100px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            font-size: 16px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+
+        .reset:hover {
+            background-color: aqua;
+            color: black;
+        }
+
+
         @media screen and (max-width: 600px) {
             form {
                 padding: 10px;
             }
         }
-
-       
-
     </style>
     <title>Responsive User Inquiry Form</title>
 </head>
+
 <body>
 
     <h2>fees deposite form</h2>
 
-    <form  name="submit-to-google-sheet" method="post" autocomplete="ON">
-
-                <!-- Email input -->
-                <label for="email">Fees deposite date:-</label>
-                <input type="date" id="email" name="inquiry date"  required>
-
-                <label for="email">Current time:-</label>
-                <input type="TIME" id="email" name="inquiry date"  required>
-        <!-- Name input -->
-        <label for="name">Perents Name:-</label>
-        <input type="text" id="name" name="name" placeholder="enter your name" required>
+    <form name="submit-to-google-sheet" method="post" autocomplete="ON">
 
         <!-- Email input -->
-        <label for="email">Student name:-</label>
-        <input type="email" id="email" name="email" placeholder="enter your email" required>
+        <label for="fees">Fees deposite date:-</label>
+        <input type="date" id="email" name="Fees deposite date" required>
 
-                <!-- Email input -->
-                <label for="email">Std:-</label>
-                <input type="text" id="email" name="birth date" placeholder="enter your birth date" required>
+        <label for="time">Current time:-</label>
+        <input type="TIME" id="email" name="Current time" required>
+        <!-- Name input -->
+        <label for="name">Perents Name:-</label>
+        <input type="text" id="name" name="Perents Name" placeholder="Enter perent'a name" required>
 
+        <!-- Email input -->
+        <label for="name">Student name:-</label>
+        <input type="text" id="email" name="Student name" placeholder="Enter student name" required>
 
-                        <!-- Email input -->
-        <label for="email">Sir name:-</label>
-        <input type="text" id="email" name="education" placeholder="enter sir mane"required>
-
-
-         <!-- Email input -->
-    
-         <!-- Email input -->
-         <label for="AGE">Collaction location:-</label>
-         <input type="number" id="Mobile NO" name="Mobile NO" placeholder="enter your mobile no"required size="10">
+        <!-- Email input -->
+        <label for="std">Std:-</label>
+        <input type="text" id="email" name="Std" placeholder="Enter std" required>
 
 
-    
-    <br>
-    
-    <br>
+        <!-- Email input -->
+        <label for="sir name">Sir name:-</label>
+        <input type="text" id="email" name="Sir name" placeholder="Enter sir mane" required>
+
+        <label for="location">Collaction location:-</label>
+        <input type="text" id="Mobile NO" name=" Enter Collaction location" placeholder="enter your mobile no" required
+            size="10">
+
+
+
+        <br>
+
+        <br>
         <!-- Submit button -->
         <input type="submit" value="Submit" class="submit" autocomplete="on " onclick="myfunction()">
-        <input type="reset" value="Reset" class="reset" autocomplete="on " >
+        <input type="reset" value="Reset" class="reset" autocomplete="on ">
     </form>
 
 
@@ -156,18 +154,19 @@ color: white;
 
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxGkUSLiAuz_m2T7MlHyBQS6eACgF8xGuYXNrsc0JrHvisYgzwRGttRDmdD_4GtsCwD/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxWFYWceTQOwTPyHRmEd_7cyySI77qMWFoDLPDQt_yYmkLcPaTWkVcjZgGAXV1zN7ENQA/exec'
         const form = document.forms['submit-to-google-sheet']
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
             form.reset();
         })
 
-        
-      </script>
+
+    </script>
 </body>
+
 </html>
