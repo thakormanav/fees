@@ -10,14 +10,17 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: rgba(171, 4, 213, 0.996);
+            background-color: rgba(3, 117, 238, 0.996);
         }
 
         h2 {
             text-align: center;
             font-size: 35px;
-            color: white;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-shadow: 2px 2px 5px rgb(8, 8, 8);
+            color: rgb(243, 241, 241);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        
+        
         }
 
         form {
@@ -32,8 +35,10 @@
         label {
             display: block;
             margin-bottom: 8px;
+            text-shadow: 2px 2px 5px rgb(12, 12, 12);
+            color: rgb(235, 233, 233);
             font-size: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
         input,
@@ -43,8 +48,8 @@
             margin-bottom: 16px;
             box-sizing: border-box;
             border-radius: 5px;
-
-            color: rgb(20, 17, 17);
+background-color: black;
+            color: rgb(248, 245, 245);
             opacity: 70%;
         }
 
@@ -94,38 +99,38 @@
 
 <body>
 
-    <h2>fees deposite form</h2>
+    <h2>Fees deposite form</h2>
 
     <form name="submit-to-google-sheet" method="post" autocomplete="ON">
 
         <!-- Email input -->
         <label for="fees">Fees deposite date:-</label>
-        <input type="date" id="email" name="Fees deposite date" required>
+        <input type="date" id="date" name="Fees deposite date" required>
 
         <label for="time">Current time:-</label>
-        <input type="TIME" id="email" name="Current time" required>
+        <input type="TIME" id="time" name="Current time" required>
         <!-- Name input -->
         <label for="name">Perents Name:-</label>
-        <input type="text" id="name" name="Perents Name" placeholder="Enter perent'a name" required>
+        <input type="text" id="pname" name="Perents Name" placeholder="Enter perent'a name" required>
 
         <!-- Email input -->
         <label for="name">Student name:-</label>
-        <input type="text" id="email" name="Student name" placeholder="Enter student name" required>
+        <input type="text" id="sname" name="Student name" placeholder="Enter student name" required>
 
         <!-- Email input -->
         <label for="std">Std:-</label>
-        <input type="text" id="email" name="Std" placeholder="Enter std" required>
+        <input type="number" id="std" name="Std" placeholder="Enter std" required>
 
 
         <!-- Email input -->
         <label for="sir name">Sir name:-</label>
-        <input type="text" id="email" name="Sir name" placeholder="Enter sir mane" required>
+        <input type="text" id="sir name" name="Sir name" placeholder="Enter sir mane" required>
+
+        <label for="location">Ammount:-</label>
+        <input type="number" id="ammount" name="Ammount" placeholder="enter your mobile no" required>
 
         <label for="location">Collaction location:-</label>
-        <input type="text" id="Mobile NO" name="Collaction location" placeholder="enter your mobile no" required
-        >
-
-
+        <input type="text" id="clocation" name="Collaction location" placeholder="enter your mobile no" required>
 
         <br>
 
