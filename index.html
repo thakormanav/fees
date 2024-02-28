@@ -12,8 +12,8 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-
-            background-image:url(https://wpvip.edutopia.org/wp-content/uploads/2022/10/iStock-902801564_master.jpg) ;
+            backdrop-filter: blur(8px);
+            background-image:url(https://lh3.googleusercontent.com/p/AF1QipMQU_F1ZbhgIcYss-DJK0KjfghPoVztObZGcvcw=s1360-w1360-h1020) ;
             background-repeat: no-repeat;
             background-size: 100% 100%;
             
@@ -22,6 +22,7 @@
         form {
             width: 350px;
             padding: 20px;
+            
            
             border-radius: 5px;
         }
@@ -29,11 +30,15 @@
         label {
             display: block;
             margin-bottom: 8px;
+            color: rgb(1, 2, 12);
+            text-shadow: 2px 2px 5px rgb(247, 243, 243);
           font-size: 20px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
         }
 
         input {
+            
             width: 100%;
             border-radius: 4px;
             padding: 8px;
@@ -44,10 +49,19 @@
             font-family: 'Times New Roman', Times, serif;
             color: white;
             background-color: black;
+           
+        }
+
+        input:hover{
+            box-shadow: 0 0 15px cyan
         }
 button:hover{
     background-color: white;
     color: black;
+    box-shadow: 0 0 50px rgb(0, 255, 76)
+    
+    ;
+    
 }
         button {
             background-color: rgb(41, 157, 203);
